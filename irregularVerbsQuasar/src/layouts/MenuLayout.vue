@@ -4,15 +4,10 @@
 
     <!-- (Optional) The Header -->
     <q-header elevated>
-      <q-tabs>
-        <q-route-tab icon="map" to="/your/route" replace label="One Tab" />
-        <q-route-tab
-          icon="assignment"
-          to="/some/other/route"
-          replace
-          label="Other Tab"
-        />
-      </q-tabs>
+      <q-toolbar-title align="center" class="font-bold">
+        <h4>Изучаем неправильные глаголы</h4>
+        <p>Введите для глагола:</p>
+      </q-toolbar-title>
     </q-header>
 
     <!-- (Optional) The Footer -->
