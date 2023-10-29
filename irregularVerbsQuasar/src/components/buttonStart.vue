@@ -1,6 +1,6 @@
 <template>
   <div>
-    <q-btn color="amber" glossy>{{ label }}</q-btn>
+    <q-btn color="amber" glossy :label="label"></q-btn>
   </div>
 </template>
 
