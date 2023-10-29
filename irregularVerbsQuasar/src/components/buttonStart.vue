@@ -1,14 +1,14 @@
 <template>
   <div>
-    <q-btn color="amber" glossy label="Start" />
+    <q-btn color="amber" glossy>{{ label }}</q-btn>
   </div>
 </template>
 
-<script>
-//import { ref } from "vue";
-
-export default {
-  name: "buttonStart",
-  setup() {},
-};
+<script setup>
+const props = defineProps({
+  label: {
+    type: String,
+    default: "Button",
+  },
+});
 </script>

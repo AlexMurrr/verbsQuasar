@@ -6,7 +6,16 @@
     <q-header elevated>
       <q-toolbar-title align="center" class="font-bold">
         <h4>Изучаем неправильные глаголы</h4>
-        <buttonStart />
+        <buttonStart
+          v-if="chengeButton"
+          label="start"
+          @click="chengeButton = !chengeButton"
+        />
+        <buttonStart
+          v-else
+          label="chack"
+          @click="chengeButton = !chengeButton"
+        />
       </q-toolbar-title>
     </q-header>
 
@@ -51,9 +60,11 @@ export default {
 
   setup() {
     const leftDrawerOpen = ref(false);
-    const b = ref("b");
+
+    const chengeButton = ref(true);
 
     return {
+      chengeButton,
       leftDrawerOpen,
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value;
