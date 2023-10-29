@@ -6,7 +6,7 @@
     <q-header elevated>
       <q-toolbar-title align="center" class="font-bold">
         <h4>Изучаем неправильные глаголы</h4>
-        <p>Введите для глагола:</p>
+        <buttonStart />
       </q-toolbar-title>
     </q-header>
 
@@ -40,12 +40,18 @@
 
 <script>
 import { ref } from "vue";
+import buttonStart from "../components/buttonStart.vue";
 
 export default {
-  // name: 'LayoutName',
+  name: "MenuLayout",
+
+  components: {
+    buttonStart,
+  },
 
   setup() {
     const leftDrawerOpen = ref(false);
+    const b = ref("b");
 
     return {
       leftDrawerOpen,
