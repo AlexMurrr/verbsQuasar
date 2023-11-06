@@ -22,7 +22,7 @@
     <!-- (Optional) The Footer -->
     <q-footer>
       <q-tabs switch-indicator>
-        <q-route-tab icon="person" to="/your/route" replace label="Profile" />
+        <q-route-tab icon="person" to="/profile" replace label="Profile" />
         <q-route-tab
           icon="assignment"
           to="/some/other/route"
@@ -33,7 +33,6 @@
     </q-footer>
 
     <q-page-container>
-      <!-- This is where pages get injected -->
       <router-view />
     </q-page-container>
   </q-layout>
