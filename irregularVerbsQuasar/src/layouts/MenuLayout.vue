@@ -23,12 +23,7 @@
     <q-footer>
       <q-tabs switch-indicator>
         <q-route-tab icon="person" to="/profile" replace label="Profile" />
-        <q-route-tab
-          icon="assignment"
-          to="/some/other/route"
-          replace
-          label="Rules"
-        />
+        <q-route-tab icon="assignment" to="/rules" replace label="Rules" />
       </q-tabs>
     </q-footer>
 
