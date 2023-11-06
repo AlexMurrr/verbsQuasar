@@ -58,6 +58,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 40vh;
 }
 </style>
