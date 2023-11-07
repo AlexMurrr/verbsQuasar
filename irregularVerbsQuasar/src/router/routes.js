@@ -6,6 +6,7 @@ const routes = [
       { path: "/profile", component: () => import("pages/ProfileVerbs.vue") },
       { path: "/rules", component: () => import("pages/RulesVerbs.vue") },
       { path: "/reg", component: () => import("pages/RegVerbs.vue") },
+      { path: "/log", component: () => import("pages/EntranceVerbs.vue") },
     ],
   },
 
