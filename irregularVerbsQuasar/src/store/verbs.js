@@ -120,6 +120,15 @@ export const useStoreVerbs = defineStore("storeId", {
         98: ["write", "писать, записывать", "wrote", "written"],
         99: ["catch", "", "caught", "caught"],
       },
+      rendArrFromVerbForms: "",
     };
+  },
+  actions: {
+    renndArrVerbs() {
+      this.rendArrFromVerbForms =
+        this.verbForms[
+          Math.floor(Math.random() * Object.keys(this.verbForms).length)
+        ];
+    },
   },
 });
